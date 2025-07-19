@@ -1,0 +1,338 @@
+/* Gate Automation Page Styles */
+.gate-automation-page {
+  padding-top: 120px; /* Increased from 100px to push content down */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content-card {
+  background-color: rgba(26, 26, 26, 0.65);
+  border-radius: 12px;
+  padding: 3rem;
+  margin: 4rem auto 1rem; /* Added top margin to push card down further */
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(220, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 20px; /* Additional positioning adjustment */
+}
+
+/* Rest of your CSS remains the same */
+.gate-hero {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.gate-hero h1 {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gate-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--light-gray);
+  margin-bottom: 0;
+}
+
+.gate-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* Replace the existing .feature-item i styles with: */
+.gate-type-image {
+  width: 250px; /* Adjust based on your image size */
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.feature-item:hover .gate-type-image {
+  transform: scale(1.1);
+}
+
+/* Remove or comment out the existing icon styles:
+.feature-item i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+*/
+
+.gate-cta {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.gate-cta h2 {
+  font-size: 1.8rem;
+  color: var(--light);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(220, 0, 0, 0.1);
+}
+
+/* Light Mode Styles */
+body.light-mode .content-card {
+  background-color: #fafafa;
+  border: 1px solid rgba(220, 0, 0, 0.1);
+}
+
+body.light-mode .gate-description,
+body.light-mode .feature-item p{
+  color: var(--light);
+}
+
+/* Gate Features Section - Simplified without animations */
+
+.feature-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: rgba(40, 40, 40, 0.6);
+  border-radius: 10px;
+  padding: 2rem;
+  align-items: center;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.feature-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.feature-content h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.feature-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--light-gray);
+  margin-bottom: 1.5rem;
+}
+
+.feature-benefits {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-benefits li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-gray);
+}
+
+.feature-benefits li:before {
+  content: "✓";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+/* Light mode adjustments */
+body.light-mode .feature-item {
+  background-color: #ffffff;
+}
+
+body.light-mode .feature-content p,
+body.light-mode .feature-benefits li {
+  color: var(--dark-gray);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .content-card {
+    margin: 2rem 0; /* Remove any horizontal margin */
+    padding: 1.5rem;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+  }
+  
+  .gate-hero h1 {
+    font-size: 2.2rem;
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .gate-features {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%
+  }
+  
+  .feature-item {
+    width: 100%;
+    flex-direction: column;
+    text-align: left; /* Align card content left */
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    margin: 0;
+    display: flex;
+  }
+
+.gate-type-image {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin-left: -23.5px; /* Removes auto margins that center the image */
+    margin-top: 13px;
+    display: block; /* Changes from flex to block (flex isn't needed for images) */
+}
+  
+  .feature-content {
+    width: 100%;
+  }
+
+  .feature-benefits {
+    text-align: left;
+  }
+
+  .gate-automation-page {
+    padding: 1rem; /* Ensure consistent padding */
+    box-sizing: border-box;
+  }
+
+  .gate-hero,
+  .gate-cta {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    width: 100%;
+  }
+  
+  .gate-description {
+    text-align: left; /* Specifically align text left */
+    word-break: break-word; /* Prevent overflow */
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-box {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-item {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .feature-content p {
+    font-size: 1rem;
+  }
+
+  .content-card {
+    padding: 1rem;
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Ensure all text elements are left-aligned */
+  h1, h2, h3, p, ul, li {
+    text-align: left;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+   
+  .feature-content,
+  .gate-hero,
+  .gate-cta {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+.gate-type-image {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin-left: -23.5px; /* Removes auto margins that center the image */
+    margin-top: 13px;
+    display: block; /* Changes from flex to block (flex isn't needed for images) */
+}
+
+  footer {
+    padding: 1rem;
+  }
+
+  .contact-box {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    margin: 0 0.5rem;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
