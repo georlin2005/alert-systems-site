@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const currentTheme = localStorage.getItem('theme') || 'dark';
   const isLightInitially = currentTheme === 'light';
-
+  
   // Apply saved theme
   if (isLightInitially) {
     document.body.classList.add('light-mode');

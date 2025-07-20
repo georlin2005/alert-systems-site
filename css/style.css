@@ -5,13 +5,16 @@
   font-style: normal;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary: #dc0000;
   --dark: #121212;
-  --dark-gray: #1a1a1a;
+  --dark-gray: #181818;
   --light: #ffffff;
   --light-gray: #e0e0e0;
+  --text-light: var(--light);
 }
 
 * {

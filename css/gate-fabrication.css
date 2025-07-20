@@ -1,0 +1,199 @@
+/* Gate Fabrication Page Styles */
+.gate-fabrication-page {
+  padding-top: 150px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.content-card {
+  background-color: rgba(26, 26, 26, 0.65);
+  border-radius: 12px;
+  padding: 3rem;
+  margin: 2rem auto;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(220, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.fabrication-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.fabrication-hero h1 {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fabrication-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--light-gray);
+  margin-bottom: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fabrication-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: rgba(40, 40, 40, 0.6);
+  border-radius: 10px;
+  padding: 2rem;
+  align-items: center;
+}
+
+.fabrication-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin: 0 auto;
+  transition: transform 0.4s ease;
+}
+
+.feature-item:hover .fabrication-image {
+  transform: scale(1.1);
+}
+
+.feature-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.feature-content h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.feature-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--light-gray);
+  margin-bottom: 1.5rem;
+}
+
+.feature-benefits {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-benefits li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-gray);
+}
+
+.feature-benefits li:before {
+  content: "✓";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+.fabrication-cta {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.fabrication-cta h2 {
+  font-size: 1.8rem;
+  color: var(--light);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+/* Light Mode Styles */
+body.light-mode .content-card {
+  background-color: rgba(250, 250, 250, 0.85);
+}
+
+body.light-mode .feature-item {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+body.light-mode .fabrication-description,
+body.light-mode .feature-content p,
+body.light-mode .feature-benefits li {
+  color: var(--dark-gray);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gate-fabrication-page {
+    padding: 1rem;
+    padding-top: 120px;
+  }
+  
+  .content-card {
+    padding: 2rem;
+    margin: 1rem auto;
+  }
+  
+  .fabrication-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .feature-item {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .fabrication-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gate-fabrication-page {
+    padding-top: 100px;
+  }
+  
+  .content-card {
+    padding: 1.5rem;
+  }
+  
+  .fabrication-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .fabrication-cta h2 {
+    font-size: 1.5rem;
+  }
+  
+  .feature-content {
+    min-width: 100%;
+  }
+}
