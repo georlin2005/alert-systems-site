@@ -1,5 +1,5 @@
 /* Gate Fabrication Page Styles */
-.doorphone-page {
+.gate-fabrication-page {
   padding-top: 120px; /* Increased from 100px to push content down */
   max-width: 1200px;
   margin: 0 auto;
@@ -103,7 +103,7 @@ body.light-mode .content-card {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  background-color: rgba(40, 40, 40, 0.6);
+  background-color: rgba(26, 26, 26, 0.6);
   border-radius: 10px;
   padding: 2rem;
   align-items: center;
@@ -184,7 +184,7 @@ body.light-mode .content-card {
     display: flex;
   }
 
-  .fabrication-type-image {
+  .fabrication-image {
    margin: auto;
    width: 50%;
    padding: 10px;
@@ -198,7 +198,7 @@ body.light-mode .content-card {
     text-align: left;
   }
 
-  .fabrication-automation-page {
+  .gate-fabrication-page {
     padding: 1rem; /* Ensure consistent padding */
     box-sizing: border-box;
   }
