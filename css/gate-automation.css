@@ -187,11 +187,11 @@ body.light-mode .content-card {
     display: flex;
   }
 
-.gate-type-image {
- margin: auto;
-  width: 50%;
-  padding: 10px;
-}
+  .gate-type-image {
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+  }
   
   .feature-content {
     width: 100%;
